@@ -1,3 +1,9 @@
+<div *ngIf="isLoggedIn; else userMsg">
+  <h3>Welcome User, go to profile</h3>
+</div>
+<ng-template #userMsg>
+  <h3>Welcome, please login</h3>
+</ng-template>
 <h1>My First Angular App</h1>
 {{msg}}
 <hr>
@@ -6,3 +12,17 @@ x+y={{x+y}}
 Name of the employye : {{employee.name}}
 <br/>
 City of the employee : {{employee.city}}
+
+<br />
+<button (click)="showAddress()">Show Address</button>
+{{employee.address}}
+<br /><br />
+<a href="Javascript :: void" (click)="loadData()">load data</a>
+<br />
+{{data}}
+<p>
+  Iterating over an array using for loop
+</p>
+<span *ngFor="let n of numArray">
+  {{n}}
+</span>
