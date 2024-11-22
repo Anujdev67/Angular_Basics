@@ -1,0 +1,9 @@
+.sort-bar {
+    text-align: center;
+}
+.cat-fact-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}

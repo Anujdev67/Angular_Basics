@@ -1,1 +1,9 @@
-<p>dashboard-page works!</p>
+<!-- <p>dashboard-page works!</p> -->
+<div class="sort-bar">
+    <button class="info-button" (click)="getNewCatFact()">New Fact</button>
+
+    
+</div>
+<div class="cat-fact-card" *ngIf="catFact">
+    <p>{{ catFact }}</p>
+</div>

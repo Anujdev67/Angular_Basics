@@ -21,7 +21,9 @@ export class TodoListComponent implements OnInit, OnDestroy{
      this.todoService.getAllTodos().subscribe({
       next:(data)=>{
         this.todos = data;
-        this.todosCopy = data;   
+        this.todosCopy = data; 
+        this.todos = this.todos.slice(0,20);
+        this.todosCopy = this.todosCopy.slice(0,20);  
         this.numTotal=this.todos.length;
         this.numComplete = this.todos.filter(t => t.completed === true).length;
         this.numIncomplete = this.todos.filter(t => t.completed === false).length;
