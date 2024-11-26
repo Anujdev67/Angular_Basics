@@ -30,7 +30,7 @@ onSignUp(){
     },
     error:(err)=>{
       console.log(err)
-      this.errorMsg = err.msg;
+      this.errorMsg = err.msg;  //err.error.msg
     }
   })
 
