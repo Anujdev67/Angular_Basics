@@ -61,3 +61,21 @@ For more information on using the Angular CLI, including detailed command refere
 =======
 # Angular_Basics
 >>>>>>> 3340249e283d55a87ddfba7e1cbbdf4304e6f1a8
+for bar chart and primeng
+Analytics widgets -- STEPS
+
+--------------------------------
+
+1. npm install primeng --legacy-peer-deps
+
+2. 
+
+add "node_modules/primeng/resources/primeng.min.css", in styles.css array in angular.json 
+
+3. 
+
+npm install chart.js --legacy-peer-deps
+
+ 
+npm run ng g c components/admin/admin-dashboard
+ 
